@@ -1,10 +1,12 @@
-version: "3"
+version: "3.4"
 
 services:
-  saleor-storefront:
-    container_name: saleor-storefront
+  storefront:
+    image: storefront
+    container_name: storefront
     build:
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./Dockerfile
       args:
         NEXT_PUBLIC_SALEOR_API_URL: ${NEXT_PUBLIC_SALEOR_API_URL}
         NEXT_PUBLIC_STOREFRONT_URL: ${NEXT_PUBLIC_STOREFRONT_URL}
@@ -12,10 +14,10 @@ services:
     ports:
       - 3000:3000
     networks:
-      - saleor_network
+      - saleor-bridge-network
 
   # Add more containers below (nginx, postgres, etc.)
 
 networks:
-  saleor_network:
-    external: false
+  saleor-bridge-network:
+    driver: bridge
