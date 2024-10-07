@@ -18,8 +18,6 @@
   <a href="https://twitter.com/getsaleor">Twitter</a>
   <span> • </span>
   <a href="https://discord.gg/H52JTZAtSH">Discord</a>
-  <span> • </span>
-  <a href="https://storefront.saleor.io/">Demo</a>
 </div>
 
 <br/>
@@ -30,6 +28,9 @@
 [![Discord Badge](https://dcbadge.vercel.app/api/server/H52JTZAtSH)](https://discord.gg/H52JTZAtSH)
 
 </div>
+
+> [!TIP]
+> Questions or issues? Check our [discord](https://discord.gg/H52JTZAtSH) channel for help.
 
 ## Features
 
@@ -148,3 +149,4 @@ pnpm run generate
 ### Preview content changes instantly (Draft Mode)
 
 Visit `http://{your-host}/api/draft` to enable cookies that disable caching to preview catalog and content changes instantly. [Learn more about the Draft Mode in Next.js docs.](https://nextjs.org/docs/app/building-your-application/configuring/draft-mode)
+
